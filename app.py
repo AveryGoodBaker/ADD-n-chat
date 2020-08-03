@@ -67,9 +67,9 @@ def Resources():
 def NewEvent():
     return render_template("new_event.html")
 
-@app.route('/about-us')
-def AboutUs():
-    return render_template("aboutus.html")
+# @app.route('/about-us')
+# def AboutUs():
+#     return render_template("aboutus.html")
 
 @app.route('/chatback', methods=['GET', 'POST'])
 def ChatBack():
