@@ -1,0 +1,324 @@
+<html>
+
+<head>
+	<title>ADD'n'Chat</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style>
+		.first {
+			background-color: blue;
+			width: 1440px;
+			height: 500px;
+			padding: 200px;
+			margin: 0px;
+			color: white;
+			text-align: center;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			font-size: 30px;
+		}
+
+		.second {
+			background-color: white;
+			width: 1440px;
+			height: 500px;
+			padding: 200px;
+			margin: 0px;
+			color: black;
+			text-align: center;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			font-size: 30px;
+		}
+
+		.bg {
+			background-image: url("https://media.gettyimages.com/videos/m-looking-for-new-business-ideas-video-id979020544?s=640x640");
+			width: 1480px;
+			height: 100%;
+			/*background-position: center;/*
+			/*background-repeat: no-repeat;*/
+			background-size: cover;
+			z-index: 1;
+		}
+
+		.indextwo {
+			border-radius: 5px;
+			position: absolute;
+			left: 200px;
+			top: 500px;
+			width: 1000px;
+			height: 1000px;
+			z-index: 3;
+			background-color: ghostwhite;
+			color: gray;
+			font-size: 20px;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		}
+
+		.indexthree {
+			position: absolute;
+			left: 0px;
+			top: 425px;
+			width: 1000px;
+			height: 100px;
+			/*height: 700px;*/
+			z-index: 4;
+			background-color: ghostwhite;
+			color: gray;
+			font-size: 20px;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		}
+
+		.unseen {
+			border-radius: 5px;
+			position: absolute;
+			left: 470px;
+			top: 300px;
+			width: 1000px;
+			height: 50px;
+			z-index: 3;
+			color: black;
+			/* background-color: white; */
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+
+		.slogan {
+			border-radius: 5px;
+			position: absolute;
+			left: 405px;
+			top: 425px;
+			width: 1000px;
+			height: 50px;
+			z-index: 3;
+			color: black;
+			/* background-color: white; */
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			font-size: 20px;
+		}
+
+		/* #one {
+			width: 50px;
+			height: 50px;
+			z-index: 4;
+			top: 300px;
+		} */
+
+
+		.question {
+			border-radius: 50px;
+			width: 50px;
+			height: 50px;
+			top: 450px;
+			left: 600px;
+		}
+
+		.fourth {
+			/*background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);*/
+			background: linear-gradient(45deg, #405de6, #5851db, #833AB4, #c13584, #e1306c, #fd1d1d);
+            width: 1480px;
+			/*background-color: linen;*/
+			top: 375px;
+			left: 0px;
+			height: 1200px;
+			z-index: 2;
+		}
+
+		.fifth {
+			background-color: black;
+
+			width: 200px;
+			height: 175px;
+			z-index: 5;
+		}
+
+		.questionmark {
+			height: 200px;
+			width: 300px;
+			top: 300px;
+			left: 700px;
+			background-color: black;
+			z-index: 10;
+		}
+
+        .statistics {
+            body {
+    background-image: linear-gradient(90deg, #F6D6A8 20%, #F5BA55 20%, #F5BA55 40%, #F09741 40%, #F09741 60%, #327AB2 60%, #327AB2 80%, #3A94F6 80%);
+}
+        }
+	</style>
+	<script src="Scripts/jquery-2.1.3.min.js"></script>
+
+	<script src="Scripts/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!--
+        <h1>Hello, world!</h1>
+        <p>Please enter your name below.</p>
+        <form method="post" action="/sendName">
+            <input type="text" name="nickname" placeholder="Enter your name"/>
+            <input type="submit" value="Submit"/>
+        </form>
+        -->
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+		<a class="navbar-brand" href="#" title="ADD'n'Chat">ADD'n'Chat</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+        </button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="home" title="Home">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="forum" title="Forum">Forum</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="calendar" title="Calendar">Calendar</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="interpreter" title="Interpreter">Interpreter</a>
+				</li>
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="articles-resources" title="Articles and Resources">Resources</a>
+				</li> -->
+				<!--
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#">Hello</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</div>
+                -->
+				<!-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Resources
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">What is ADHD?</a>
+						<a class="dropdown-item" href="#">Symptoms of ADHD</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">ADHD Treatments</a>
+					</div>
+				</li> -->
+			</ul> 
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="logIn" title="Log In to your Account on TimeChat">Log In</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="signUp" title="Create an Account on TimeChat">Sign Up</a>
+				</li>
+			</ul>
+			<!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+		</div>
+	</nav>
+	<div class="bg">
+		<div class="unseen">
+			<h1 style="font-size: 100px;">
+				ADD'n'Chat
+			</h1>
+			<br>
+        </div>
+
+			<p class="slogan">
+				Removing the stigma and supporting our neurodivergent community.
+				<p>
+		</div>
+		<div class="fourth">
+
+			<div class="indextwo">
+				<h1 style="text-align: center">The "What"</h1>
+				<hr>
+				<br>
+				<p>TimeChat is an educational platform and<br> social networking space for those with ADHD.
+					<br>
+            Our goal is to support people with the diagnosis<br>
+            by providing them with a variety of resources to help <br>
+            them better manage their symptoms and will also <br>
+            provide those who are not as familiar with <br>
+            ADHD resources to teach them about what the diagnosis<br>
+            entails and how to better support those around them. </p>
+					<br>
+					<hr>
+					<br>
+					<br>
+					<hr>
+					<br>
+					<br>
+					<div class="indexthree">
+						<h1 style="text-align: center">The "Why"</h1>
+						<hr>
+						<p>We cannot stand by while our
+							neurodivergent<br> community struggles with challenges,<br> and we as a society must do everything we can to support them.</p>
+
+					</div>
+
+					<footer id="footer">
+						<section>
+							<h2></h2>
+							<p>Everyone deserves the chance to make connections without fear. </p>
+						</section>
+						<section>
+							<h2>TimeChat HeadQuarters</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>194 Mercer Street &bull; New York, NY 10012 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(123) 456-7843</dd>
+								<dt>Email</dt>
+								<dd><a href="#">timechat@timechat.com</a></dd>
+							</dl>
+						</section>
+						<p class="copyright">&copy; TimeChat </p>
+					</footer>
+
+			</div>
+
+
+
+
+		</div>
+
+
+		<!-- <div>
+		We at TimeChat are introducing you to a new way of thinking about how to deal with mannerisms associated
+		with ADHD!
+	</div> -->
+
+
+
+
+
+
+
+		<!-- jQuery library -->
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+		​
+		<!-- Latest compiled JavaScript -->
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+			integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"> -->
+		<!--</script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+<!-- <img src="https://www.netclipart.com/pp/m/10-107138_red-circle-with-line-through-it-png-transparent.png" id="one" width=100px> -->
+
+</html>

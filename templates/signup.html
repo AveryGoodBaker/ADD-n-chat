@@ -1,0 +1,114 @@
+<html>
+
+<head>
+	<title>Sign Up Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<style>
+		body {
+			background: linear-gradient(45deg, #405de6, #5851db, #833AB4, #c13584, #e1306c, #fd1d1d);
+		}
+
+		.two {
+            top: 60px;
+            left: 200px;
+			border: 1px solid black;
+            border-radius: 5px;
+            background-color: white;
+            text-align: center;
+            width: 400px;
+            z-index: 2;
+		}
+
+        .sign-up-form {
+            width: 300px;
+            box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+            background: #fff;
+            padding: 20px;
+            margin: 8% auto 0;
+            text-align: center;
+        }
+
+        .sign-up-form h1 {
+            color: #1c8adb;
+            margin-bottom: 30px;
+        }
+
+        .input-box {
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+            border: 1px solid #999;
+        }
+	</style>
+</head>
+
+<body>
+
+    <div class="sign-up-form">
+        <h1>Sign Up Now</h1>
+        <form>
+        <input type="email" class="input-box" placeholder="Your Email">
+        <input type="password" class="input-box" placeholder="Your Password">
+        <p><span><input type="checkbox"</span> agree to the terms of services</p>
+        <button type="button" class="signup-btn">Sign Up</button>
+        <hr>
+        </form>
+
+	<!-- <form method="post" action="/index" class="two">
+		<h1>Sign Up Now</h1>
+		<label for="name">What's your name?</label>
+        <br>
+		<input type="text" name='name'>
+		<br>
+		<label for="account-name">Please type in a name for your account:</label>
+		<input type="text" name="account-name"/>
+        <br>
+		<input type="submit" value="Submit"/>
+    </form> -->
+
+
+
+
+		<!-- <div class="card" style="width: 18rem;">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+					card's
+					content.</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+<html lang="en"> -->
+
+
+		<!-- <meta name="google-signin-scope" content="profile email">
+	<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+	<script src="https://apis.google.com/js/platform.js" async defer></script> -->
+
+
+
+		<!-- <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+	<script>
+		function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      }
+	</script> -->
+
+
+
+</body>
+
+</html>

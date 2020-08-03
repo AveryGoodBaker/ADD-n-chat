@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <title>ADD'n'Chat</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<style>
+        body {
+
+        }
+		/* Chat containers */
+		.container {
+			border: 2px solid #dedede;
+			background-color: #f1f1f1;
+			border-radius: 5px;
+			padding: 10px;
+			margin: 10px 0;
+		}
+
+		/* Darker chat container */
+		.darker {
+			border-color: #ccc;
+			background-color: #ddd;
+		}
+
+		/* Clear floats */
+		.container::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		/* Style images */
+		.container img {
+			float: left;
+			max-width: 60px;
+			width: 100%;
+			margin-right: 20px;
+			border-radius: 60%;
+		}
+
+		/* Style the right image */
+		.container img.right {
+			float: right;
+			margin-left: 20px;
+			margin-right: 0;
+		}
+
+		/* Style time text */
+		.time-right {
+			float: right;
+			color: #aaa;
+		}
+
+		/* Style time text */
+		.time-left {
+			float: left;
+			color: #999;
+		}
+	</style>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+		<a class="navbar-brand" href="#" title="ADD'n'Chat">ADD'n'Chat</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="home" title="Home">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="chat" title="Forum">Forum</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="calendar" title="Calendar">Calendar</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="interpreter" title="Interpreter">Interpreter</a>
+				</li>
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="articles-resources" title="Articles and Resources">Resources</a>
+				</li> -->
+				<!-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+					</a>
+				</li> -->
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="logIn" title="Log In to your Account on TimeChat">Log In</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="signUp" title="Create an Account on TimeChat">Sign Up</a>
+				</li>
+			</ul>
+			<!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+		</div>
+	</nav>
+	<br>
+	<br>
+	<div class="container">
+		<img src="https://cdn.the-scientist.com/assets/articleNo/30281/iImg/1417/83a2998b-ac47-45a2-b0e7-07151db56f68-alpaca.png" alt="Avatar">
+		<p>Hey, Mike! How are you?</p>
+		<span class="time-right">7:13 AM</span>
+	</div>
+
+	<div class="container darker">
+		<img src="https://www.mercurynews.com/wp-content/uploads/2019/02/05075011.jpg" alt="Avatar" class="right">
+		<p>Hey! I'm fine. How about you?</p>
+		<span class="time-left">7:16 AM</span>
+	</div>
+
+	<div class="container">
+		<img src="https://cdn.the-scientist.com/assets/articleNo/30281/iImg/1417/83a2998b-ac47-45a2-b0e7-07151db56f68-alpaca.png" alt="Avatar">
+		<p>Peachy! So, what's first on the agenda on your end for today?</p>
+		<span class="time-right">7:17 AM</span>
+	</div>
+
+	<div class="container darker">
+		<img src="https://www.mercurynews.com/wp-content/uploads/2019/02/05075011.jpg" alt="Avatar" class="right">
+		<p>Cool! Yeah, I'm going to be going out for a bike ride at 9 today! I want to be back around 10:50. How about you? </p>
+		<span class="time-left">7:17 AM</span>
+	</div>
+
+	<div class="container">
+		<img src="https://cdn.the-scientist.com/assets/articleNo/30281/iImg/1417/83a2998b-ac47-45a2-b0e7-07151db56f68-alpaca.png" alt="Avatar">
+		<p>That sounds fun! I'm going to be practicing my piano at 8 for about an hour.</p>
+		<span class="time-left">7:18 AM</span>
+    </div>
+
+    <div class="container darker">
+		<img src="https://www.mercurynews.com/wp-content/uploads/2019/02/05075011.jpg" alt="Avatar" class="right">
+		<p>Sounds cool! Yeah, so I'll check in with you at about 9:05!</p>
+		<span class="time-left">7:19 AM</span>
+	</div>
+
+    <div class="container">
+		<img src="https://cdn.the-scientist.com/assets/articleNo/30281/iImg/1417/83a2998b-ac47-45a2-b0e7-07151db56f68-alpaca.png" alt="Avatar">
+		<p>Sounds great! See you then!</p>
+		<span class="time-left">7:20 AM</span>
+    </div>
+</body>
+
+</html>
