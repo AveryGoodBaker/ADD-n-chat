@@ -4,8 +4,7 @@ from flask import Flask
 from flask import render_template
 from flask import request, redirect
 from flask_pymongo import PyMongo
-from model import Problem
-
+from model import get_diagnosis
 # -- Initialization section --
 app = Flask(__name__)
 
@@ -55,9 +54,10 @@ def Calendar():
 def Forum():
     return render_template("forum.html")
 
-@app.route('/interpreter')
+@app.route('/interpreter', methods=['GET', 'POST'])
 def Interpreter():
-    return render_template("interpreter.html")
+    if request.method == "GET":
+        return render_template("interpreter.html")
 
 @app.route('/articles-resources')
 def Resources():
@@ -75,8 +75,8 @@ def NewEvent():
 def ChatBack():
     if request.method == "POST":
         problem = request.form['problem']
-        cool = Problem(problem)
+        diagnosis = get_diagnosis(problem)
         name = request.form['name']
-        return render_template("chatback.html", cool=cool, name=name)
+        return render_template("chatback.html", diagnosis=diagnosis, name=name)
     else:
         render_template("calendar.html")

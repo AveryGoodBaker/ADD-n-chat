@@ -4,26 +4,50 @@
 	<title>Log In</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <style>
-        body {
-            background: linear-gradient(45deg, #405de6, #5851db, #833AB4, #c13584, #e1306c, #fd1d1d);
-        }
-    </style>
+	<style>
+		body {
+			background: linear-gradient(45deg, #405de6, #5851db, #833AB4, #c13584, #e1306c, #fd1d1d);
+		}
+
+		.log-in-form {
+			width: 300px;
+			box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+			background: #fff;
+			padding: 20px;
+			margin: 8% auto 0;
+			text-align: center;
+		}
+
+		.log-in-form h1 {
+			color: #1c8adb;
+			margin-bottom: 30px;
+		}
+	</style>
 </head>
 
 <body>
-	<form method="post" action="/sendBreakfast">
+
+	<div class="log-in-form">
+		<h1>Log In</h1>
+		<form>
+			<input type="email" class="input-box" placeholder="Your Email">
+			<input type="password" class="input-box" placeholder="Your Password">
+			<button type="button" class="signup-btn"><a href="/index">Log In</a></button>
+
+		</form>
+
+		<!-- <form method="post" action="/sendBreakfast">
         <h1>Account Login</h1>
 		<label for="nickname">What's your name?</label>
 		<input type="text" name='nickname'>
 		<label for="account-name">Please type in the name of your account:</label>
 		<input type="text" name="breakfast"/>
 		<input type="submit" value="Submit"/>
-        </form>
+        </form> -->
 
 
-			<script>
-				//var myVar;
+		<script>
+			//var myVar;
 
 //function myFunction() {
   //myVar = setTimeout(alertFunc, 5000);
@@ -32,7 +56,7 @@
 //function alertFunc() {
   //alert("Hello!");
 }
-			</script>
-</body> 
+		</script>
+</body>
 
 </html>

@@ -38,9 +38,41 @@
         .input-box {
             border-radius: 20px;
             padding: 10px;
-            margin: 10px;
-            width: 100px;
+            margin: 10px 0;
+            width: 100%;
             border: 1px solid #999;
+            outline: none;
+        }
+
+        button {
+            color: #fff;
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            margin: 10px 0;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .signup-btn {
+            background-color: #1c8adb;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        hr {
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        .or {
+            background: #fff;
+            width: 30px;
+            margin: -29px auto 10px;
         }
 	</style>
 </head>
@@ -52,9 +84,14 @@
         <form>
         <input type="email" class="input-box" placeholder="Your Email">
         <input type="password" class="input-box" placeholder="Your Password">
-        <p><span><input type="checkbox"</span> agree to the terms of services</p>
-        <button type="button" class="signup-btn">Sign Up</button>
+        <p><span><input type="checkbox"</span> I agree to the terms of services</p>
+        <button type="button" class="signup-btn"><a href="/index">Sign Up</a></button>
         <hr>
+        <p class="or">OR</p>
+        <br>
+        <p>Do you already have an account?</p> 
+        <a href="logIn">Log In</a>
+        
         </form>
 
 	<!-- <form method="post" action="/index" class="two">
